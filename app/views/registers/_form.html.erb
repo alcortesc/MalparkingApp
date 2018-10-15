@@ -1,0 +1,42 @@
+<%= form_for(register) do |f| %>
+  <% if register.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(register.errors.count, "error") %> prohibited this register from being saved:</h2>
+
+      <ul>
+      <% register.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :evidence_id %>
+    <%= f.text_field :evidence_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :vehicle_id %>
+    <%= f.text_field :vehicle_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :report_id %>
+    <%= f.text_field :report_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fecha_hora %>
+    <%= f.datetime_select :fecha_hora %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

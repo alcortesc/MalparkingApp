@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tipo vehiculo:</strong>
+  <%= @vehicle.tipo_vehiculo %>
+</p>
+
+<p>
+  <strong>Placa:</strong>
+  <%= @vehicle.placa %>
+</p>
+
+<%= link_to 'Modificar', edit_vehicle_path(@vehicle) %> |
+<%= link_to 'Volver', vehicles_path %>

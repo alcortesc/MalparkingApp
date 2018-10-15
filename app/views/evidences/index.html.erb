@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h2>Evidencia</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre evidencia</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @evidences.each do |evidence| %>
+      <tr>
+        <td><%= evidence.nombre_evidencia %></td>
+        <td><%= link_to 'Mostrar', evidence %></td>
+        <td><%= link_to 'Modificar', edit_evidence_path(evidence) %></td>
+        <td><%= link_to 'Eliminar', evidence, method: :delete, data: { confirm: 'Esta seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nueva Evidencia', new_evidence_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Evidence:</strong>
+  <%= @register.evidence %>
+</p>
+
+<p>
+  <strong>Vehicle:</strong>
+  <%= @register.vehicle %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @register.user %>
+</p>
+
+<p>
+  <strong>Report:</strong>
+  <%= @register.report %>
+</p>
+
+<p>
+  <strong>Fecha hora:</strong>
+  <%= @register.fecha_hora %>
+</p>
+
+<%= link_to 'Edit', edit_register_path(@register) %> |
+<%= link_to 'Back', registers_path %>

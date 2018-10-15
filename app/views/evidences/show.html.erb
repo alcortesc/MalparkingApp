@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre evidencia:</strong>
+  <%= @evidence.nombre_evidencia %>
+</p>
+
+<%= link_to 'Modificar', edit_evidence_path(@evidence) %> |
+<%= link_to 'Volver', evidences_path %>

@@ -1,0 +1,37 @@
+<%= form_for(report) do |f| %>
+  <% if report.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(report.errors.count, "error") %> prohibited this report from being saved:</h2>
+
+      <ul>
+      <% report.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :descripcion_denuncia %>
+    <%= f.text_field :descripcion_denuncia %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tipo_denuncia %>
+    <%= f.text_field :tipo_denuncia %>
+  </div>
+
+  <div class="field">
+    <%= f.label :direccion_denuncia %>
+    <%= f.text_field :direccion_denuncia %>
+  </div>
+
+  <div class="field">
+    <%= f.label :envio_notificacion %>
+    <%= f.text_field :envio_notificacion %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

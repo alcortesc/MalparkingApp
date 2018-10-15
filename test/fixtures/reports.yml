@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  descripcion_denuncia: MyString
+  tipo_denuncia: MyString
+  direccion_denuncia: MyString
+  envio_notificacion: MyString
+
+two:
+  descripcion_denuncia: MyString
+  tipo_denuncia: MyString
+  direccion_denuncia: MyString
+  envio_notificacion: MyString

@@ -1,0 +1,32 @@
+<%= form_for(send) do |f| %>
+  <% if send.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(send.errors.count, "error") %> prohibited this send from being saved:</h2>
+
+      <ul>
+      <% send.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :notification_id %>
+    <%= f.text_field :notification_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :report_id %>
+    <%= f.text_field :report_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fecha_hora %>
+    <%= f.datetime_select :fecha_hora %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

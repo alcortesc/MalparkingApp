@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Contrasenia:</strong>
+  <%= @entry.contrasenia %>
+</p>
+
+<p>
+  <strong>Fecha hora ingreso:</strong>
+  <%= @entry.fecha_hora_ingreso %>
+</p>
+
+<p>
+  <strong>Fecha hora salida:</strong>
+  <%= @entry.fecha_hora_salida %>
+</p>
+
+<p>
+  <strong>Cantidad ingresos:</strong>
+  <%= @entry.cantidad_ingresos %>
+</p>
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>

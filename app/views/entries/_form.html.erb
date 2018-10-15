@@ -1,0 +1,37 @@
+<%= form_for(entry) do |f| %>
+  <% if entry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(entry.errors.count, "error") %> prohibited this entry from being saved:</h2>
+
+      <ul>
+      <% entry.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :contrasenia %>
+    <%= f.text_field :contrasenia %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fecha_hora_ingreso %>
+    <%= f.datetime_select :fecha_hora_ingreso %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fecha_hora_salida %>
+    <%= f.datetime_select :fecha_hora_salida %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cantidad_ingresos %>
+    <%= f.number_field :cantidad_ingresos %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

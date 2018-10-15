@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  notification: one
+  report: one
+  fecha_hora: 2018-09-29 09:18:57
+
+two:
+  notification: two
+  report: two
+  fecha_hora: 2018-09-29 09:18:57

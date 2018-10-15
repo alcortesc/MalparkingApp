@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descripcion denuncia:</strong>
+  <%= @report.descripcion_denuncia %>
+</p>
+
+<p>
+  <strong>Tipo denuncia:</strong>
+  <%= @report.tipo_denuncia %>
+</p>
+
+<p>
+  <strong>Direccion denuncia:</strong>
+  <%= @report.direccion_denuncia %>
+</p>
+
+<p>
+  <strong>Envio notificacion:</strong>
+  <%= @report.envio_notificacion %>
+</p>
+
+<%= link_to 'Modificar', edit_report_path(@report) %> |
+<%= link_to 'Volver', reports_path %>

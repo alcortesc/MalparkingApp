@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  register: one
+  fecha_hora: 2018-09-29 10:06:46
+
+two:
+  user: two
+  register: two
+  fecha_hora: 2018-09-29 10:06:46

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @authenticate.user %>
+</p>
+
+<p>
+  <strong>Register:</strong>
+  <%= @authenticate.register %>
+</p>
+
+<p>
+  <strong>Fecha hora:</strong>
+  <%= @authenticate.fecha_hora %>
+</p>
+
+<%= link_to 'Edit', edit_authenticate_path(@authenticate) %> |
+<%= link_to 'Back', authenticates_path %>

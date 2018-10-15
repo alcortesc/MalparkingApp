@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  entidad_notificada: MyString
+  elemento_notificado: MyString
+  estado_notificacion: MyString
+
+two:
+  entidad_notificada: MyString
+  elemento_notificado: MyString
+  estado_notificacion: MyString

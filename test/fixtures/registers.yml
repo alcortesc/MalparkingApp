@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  evidence: one
+  vehicle: one
+  user: one
+  report: one
+  fecha_hora: 2018-09-29 10:04:10
+
+two:
+  evidence: two
+  vehicle: two
+  user: two
+  report: two
+  fecha_hora: 2018-09-29 10:04:10

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Notification:</strong>
+  <%= @send.notification %>
+</p>
+
+<p>
+  <strong>Report:</strong>
+  <%= @send.report %>
+</p>
+
+<p>
+  <strong>Fecha hora:</strong>
+  <%= @send.fecha_hora %>
+</p>
+
+<%= link_to 'Edit', edit_send_path(@send) %> |
+<%= link_to 'Back', sends_path %>

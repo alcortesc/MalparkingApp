@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h2>Vehiculo</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo vehiculo</th>
+      <th>Placa</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vehicles.each do |vehicle| %>
+      <tr>
+        <td><%= vehicle.tipo_vehiculo %></td>
+        <td><%= vehicle.placa %></td>
+        <td><%= link_to 'Mostrar', vehicle %></td>
+        <td><%= link_to 'Modificar', edit_vehicle_path(vehicle) %></td>
+        <td><%= link_to 'Eliminar', vehicle, method: :delete, data: { confirm: 'Esta seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nuevo Vehiculo', new_vehicle_path %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tipo documento:</strong>
+  <%= @user.tipo_documento %>
+</p>
+
+<p>
+  <strong>Numero documento:</strong>
+  <%= @user.numero_documento %>
+</p>
+
+<p>
+  <strong>Ciudad:</strong>
+  <%= @user.ciudad %>
+</p>
+
+<p>
+  <strong>Correo electronico:</strong>
+  <%= @user.correo_electronico %>
+</p>
+
+<p>
+  <strong>Genero:</strong>
+  <%= @user.genero %>
+</p>
+
+<p>
+  <strong>Celular:</strong>
+  <%= @user.celular %>
+</p>
+
+<%= link_to 'Modificar', edit_user_path(@user) %> |
+<%= link_to 'Volver', users_path %>
